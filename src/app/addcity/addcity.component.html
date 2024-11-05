@@ -1,0 +1,35 @@
+
+<div class="travel-form-container">
+    <h2>{{ travel.tourID ? 'Edit Travel Destination' : 'Add Travel Destination' }}</h2>
+  
+    <form (ngSubmit)="onSave()" #travelForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="travel.name" name="name" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" [(ngModel)]="travel.location" name="location" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="img">Image URL:</label>
+        <input type="text" id="img" [(ngModel)]="travel.img" name="img" />
+      </div>
+  
+      <div class="form-group">
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" [(ngModel)]="travel.rating" name="rating" min="0" max="5" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="text" id="price" [(ngModel)]="travel.price" name="price" required />
+      </div>
+  
+      <button type="submit" [disabled]="!travelForm.valid">Save</button>
+      <button type="button" (click)="router.navigate(['/travel-list'])">Cancel</button>
+    </form>
+  </div>
+  

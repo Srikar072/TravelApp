@@ -1,0 +1,196 @@
+<!--
+<h2>Welcome to ETravel!</h2>
+<app-travel-list></app-travel-list>
+<div class="card">
+  <div class="card-header heading">
+    Popular Destinations
+  </div>
+  <div class="card-body">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Search</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Search destinations">
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Destination</th>
+            <th>Location</th>
+            <th>Rating</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let destination of destinations">
+            <td><img [src]="destination.img" alt="Destination Image" width="100"></td>
+            <td>{{destination.name}}</td>
+            <td>{{destination.location}}</td>
+            <td>{{destination.rating}}</td>
+            <td>{{destination.price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+-->
+
+<!--
+<h2>Welcome to ETravel!</h2>
+ This will render the TravelListComponent which handles the destinations 
+<app-travel-list></app-travel-list> -->
+
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Rome the World</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Bookings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+<!--
+
+<h2>Welcome!</h2>
+<h3>Explore Destinations</h3>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="assets/images/paris.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Paris</h5>
+        <p class="card-text">France</p>
+        <p><strong>Rating:</strong> 4.8</p>
+        <p><strong>Price:</strong> $1500</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="assets/images/bali.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Bali</h5>
+        <p class="card-text">Indonesia</p>
+        <p><strong>Rating:</strong> 4.7</p>
+        <p><strong>Price:</strong> $1000</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src="assets/images/NYC.jpg" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">New York</h5>
+        <p class="card-text">USA</p>
+        <p><strong>Rating:</strong> 4.6</p>
+        <p><strong>Price:</strong> $1200</p>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+  <!-- Navbar
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Roam the world!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/travel-list">Book Tickets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<router-outlet></router-outlet> -->
+
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" style="padding: 0.5rem 0.5rem;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-size: 1.5rem; font-weight: bold;">Xplore!</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 1rem;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/travellist">Book Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contactus">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Register">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" style="padding: 0.5rem 0.5rem;"> 
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-size: 1.5rem; font-weight: bold;">Xplore!</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 1rem;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/travellist">Book Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contactus">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Register">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Create Destination Button
+<div class="container mt-3" style="margin-top: 70px;">
+  <a class="btn btn-primary" routerLink="/create-destination">Create Destination</a>
+</div> -->
+
+<router-outlet></router-outlet>

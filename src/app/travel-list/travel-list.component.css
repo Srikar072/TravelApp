@@ -1,0 +1,75 @@
+/* Global styles */
+body {
+  background-color: black; /* Change background to black */
+  color: white; /* Optional: Set text color to white for better contrast */
+}
+
+/* Margin for input */
+.mb-4 {
+  margin-top: 2rem; /* Space above the input */
+  margin-bottom: 150px; /* Space below the input */
+}
+
+/* Input styles */
+.form-control {
+  width: 100%; /* Full width */
+  padding: 10px 15px; /* Padding for the input */
+  font-size: 1rem; /* Font size */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.form-control:focus {
+  border-color: #ff5733; /* Focus border color */
+  box-shadow: 0 0 5px rgba(255, 87, 51, 0.5); /* Shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+::placeholder {
+  color: #aaa; /* Placeholder text color */
+  opacity: 1; /* Placeholder opacity */
+  transition: color 0.3s ease; /* Smooth transition for placeholder color */
+}
+
+.form-control:focus::placeholder {
+  color: #ff5733; /* Change placeholder color on focus */
+}
+
+/* Tour card styles */
+.tour-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tour image styles */
+.tour-img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Description styles */
+.description {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Button styles */
+.btn-outline-primary {
+  border: 2px solid grey; /* Grey outline */
+  color: grey; /* Grey text */
+  background-color: transparent; /* Transparent background */
+}
+
+.btn-outline-primary:hover {
+  background-color: grey; /* Grey background on hover */
+  color: white; /* White text on hover */
+}

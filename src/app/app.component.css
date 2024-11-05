@@ -1,0 +1,56 @@
+/* Navbar styles */
+.navbar {
+  margin-bottom: 20px;
+  background-color: #bc8888; /* Dark background */
+  padding: 15px 30px; /* Add some padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(143, 119, 119, 0.3); /* Subtle shadow for depth */
+}
+
+.nav-link {
+  margin-right: 15px;
+  color: #ffffff; /* White text for visibility */
+  font-size: 18px; /* Slightly larger font size */
+  transition: color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.nav-link:hover {
+  color: #ff5733; /* Accent color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  font-size: 24px;
+  color: #ffffff; /* White text for visibility */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-brand:hover {
+  color: #756d6b; /* Accent color on hover */
+}
+
+/* Card styles */
+.card {
+  margin-bottom: 20px;
+  padding-left: 3cm;
+  border-radius: 8px; /* Rounded corners for cards */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for cards */
+  background-color: #ffffff; /* White background for cards */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Darker text for contrast */
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666; /* Medium gray for text */
+}

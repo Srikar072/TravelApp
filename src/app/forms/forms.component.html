@@ -1,0 +1,24 @@
+<div class="card shadow md-3" style="width: 60%; align-self: center; margin: 20px;">
+    <div class="card-header" style="background-color: maroon;">
+      <span style="color: antiquewhite;">Edit the Destination</span>
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Destination Name</span>
+          </div>
+          <input class="form-control" type="text" id="destinationName" name="destinationName" [(ngModel)]="travel.name">
+        </div>
+        
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Rating</span>
+          </div>
+          <input class="form-control" type="number" id="destinationRating" name="destinationRating" [(ngModel)]="travel.rating">
+        </div>
+        <button name="save" type="button" class="btn btn-secondary" (click)="onSave()">Save</button>
+      </form>
+    </div>
+  </div>
+  

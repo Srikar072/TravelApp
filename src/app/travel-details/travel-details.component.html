@@ -1,0 +1,17 @@
+<div class="container">
+    <h4>This is the booking id : {{ travel?.tourID }}</h4>
+    <h4>This is the name of the city : {{ travel?.name}}</h4>
+    <h4>This is the name of the State : {{ travel?.location }}</h4>
+    <h4>This is the total price : {{ travel?.price }}</h4>
+    <h4>This is the total rating : {{ travel?.rating }}</h4>
+    <button class="btn btn-info" (click)="onBack()"> Go Back</button>
+
+
+<button class="btn btn-outline-info"  
+style="width: 80px;margin-left: 10px;" (click)="onEdit()">
+    Edit
+</button>
+<button class="btn btn-outline-danger" (click)="onDelete()" style="width: 85px;margin-left: 10px">
+    Delete
+</button>
+</div>

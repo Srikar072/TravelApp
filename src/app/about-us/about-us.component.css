@@ -1,0 +1,11 @@
+.about-us-container {
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  .about-us-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
